@@ -1,0 +1,17 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "cHivlcAUvMKio2PaUiL1rUzrMBI=",
+			"path": "github.com/go-swagger/go-swagger",
+			"revision": "c2a7c881ef89c08a33a18783b4a5c6f6329a0473",
+			"revisionTime": "2017-07-04T18:29:14Z"
+		},
+		{
+			"path": "go-swagger",
+			"revision": ""
+		}
+	],
+	"rootPath": "github.com/Polarishq/api-client-go"
+}

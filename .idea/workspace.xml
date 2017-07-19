@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2622c0b6-68e3-4fe1-b94b-41f1dd55e892" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/generated/client/applications/get_applications_id_parameters.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/generated/client/applications/get_applications_id_responses.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/generated/client/applications/get_applications_parameters.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/generated/client/applications/get_applications_responses.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/generated/client/logface_client.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logface.go" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/applications/get_application_id_parameters.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/applications/get_application_id_responses.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/applications/get_application_parameters.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/applications/get_application_responses.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/fire_fawkes_developer_client.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/identity/post_tenants_parameters.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/identity/post_tenants_responses.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/get_login_authorize_callback_parameters.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/get_login_authorize_callback_responses.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/get_login_authorize_parameters.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/get_login_authorize_responses.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/get_login_providers_parameters.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/get_login_providers_responses.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/login_client.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/post_login_oauth_revoke_parameters.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/post_login_oauth_revoke_responses.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/post_login_oauth_token_parameters.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/post_login_oauth_token_responses.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/post_login_token_parameters.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/generated/client/login/post_login_token_responses.go" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/applications/applications_client.go" afterPath="$PROJECT_DIR$/src/generated/client/applications/applications_client.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/context/context_client.go" afterPath="$PROJECT_DIR$/src/generated/client/context/context_client.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/context/get_contexts_id_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/context/get_contexts_id_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/context/get_contexts_id_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/context/get_contexts_id_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/context/post_contexts_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/context/post_contexts_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/context/post_contexts_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/context/post_contexts_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/events/events_client.go" afterPath="$PROJECT_DIR$/src/generated/client/events/events_client.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/events/events_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/events/events_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/events/events_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/events/events_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/events/get_events_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/events/get_events_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/events/get_events_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/events/get_events_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/delete_account_api_keys_client_id_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/delete_account_api_keys_client_id_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/delete_account_api_keys_client_id_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/delete_account_api_keys_client_id_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/get_account_api_keys_client_id_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/get_account_api_keys_client_id_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/get_account_api_keys_client_id_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/get_account_api_keys_client_id_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/get_account_api_keys_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/get_account_api_keys_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/get_account_api_keys_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/get_account_api_keys_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/get_account_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/get_account_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/get_account_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/get_account_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/get_tenants_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/get_tenants_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/get_tenants_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/get_tenants_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/identity_client.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/identity_client.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/post_account_api_keys_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/post_account_api_keys_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/post_account_api_keys_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/post_account_api_keys_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/put_account_api_keys_client_id_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/put_account_api_keys_client_id_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/put_account_api_keys_client_id_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/put_account_api_keys_client_id_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/put_account_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/put_account_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/identity/put_account_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/identity/put_account_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/search/post_search_parameters.go" afterPath="$PROJECT_DIR$/src/generated/client/search/post_search_parameters.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/search/post_search_responses.go" afterPath="$PROJECT_DIR$/src/generated/client/search/post_search_responses.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/search/search_client.go" afterPath="$PROJECT_DIR$/src/generated/client/search/search_client.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/account_response.go" afterPath="$PROJECT_DIR$/src/generated/models/account_response.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/api_key.go" afterPath="$PROJECT_DIR$/src/generated/models/api_key.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/api_key_response.go" afterPath="$PROJECT_DIR$/src/generated/models/api_key_response.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/api_keys_response.go" afterPath="$PROJECT_DIR$/src/generated/models/api_keys_response.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/application.go" afterPath="$PROJECT_DIR$/src/generated/models/application.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/application_request.go" afterPath="$PROJECT_DIR$/src/generated/models/application_request.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/applications_response.go" afterPath="$PROJECT_DIR$/src/generated/models/applications_response.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/error.go" afterPath="$PROJECT_DIR$/src/generated/models/error.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/event.go" afterPath="$PROJECT_DIR$/src/generated/models/event.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/events.go" afterPath="$PROJECT_DIR$/src/generated/models/events.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/events_return.go" afterPath="$PROJECT_DIR$/src/generated/models/events_return.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/filter_k_v.go" afterPath="$PROJECT_DIR$/src/generated/models/filter_k_v.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/list_meta_data.go" afterPath="$PROJECT_DIR$/src/generated/models/list_meta_data.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/query_info.go" afterPath="$PROJECT_DIR$/src/generated/models/query_info.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/query_logic_info_meta_data.go" afterPath="$PROJECT_DIR$/src/generated/models/query_logic_info_meta_data.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/query_response.go" afterPath="$PROJECT_DIR$/src/generated/models/query_response.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/search_context.go" afterPath="$PROJECT_DIR$/src/generated/models/search_context.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/simple_filter.go" afterPath="$PROJECT_DIR$/src/generated/models/simple_filter.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/social_provider.go" afterPath="$PROJECT_DIR$/src/generated/models/social_provider.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/tenant.go" afterPath="$PROJECT_DIR$/src/generated/models/tenant.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/time_range.go" afterPath="$PROJECT_DIR$/src/generated/models/time_range.go" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/token.go" afterPath="$PROJECT_DIR$/src/generated/models/token.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swagger.json" afterPath="$PROJECT_DIR$/swagger.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/vendor.json" afterPath="$PROJECT_DIR$/vendor/vendor.json" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="api-client-go" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="logface.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logface.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events_client.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/generated/client/events/events_client.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+              <folding>
+                <element signature="e#150#233#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logface_client.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/generated/client/logface_client.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client_operation.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../go-openapi/runtime/client_operation.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="swagger.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swagger.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6167">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../go-openapi/runtime/vendor/golang.org/x/net/context/context.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-645">
+              <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/logface.go" />
+        <option value="$PROJECT_DIR$/swagger.json" />
+        <option value="$PROJECT_DIR$/src/generated/client/logface_client.go" />
+        <option value="$PROJECT_DIR$/src/generated/client/events/events_client.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="600" />
+    <option name="y" value="23" />
+    <option name="width" value="1400" />
+    <option name="height" value="1208" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="context" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client-go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="applications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <filePath value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="github.com/Polarishq/api-client-go" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/Polarishq/api-client-go" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="600" y="23" width="1400" height="1208" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/logface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go-openapi/runtime/vendor/golang.org/x/net/context/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-645">
+          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go-openapi/runtime/client_operation.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swagger.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6167">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated/client/fire_fawkes_developer_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="132" column="66" lean-forward="false" selection-start-line="132" selection-start-column="66" selection-end-line="132" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated/client/logface_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated/client/events/events_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding>
+            <element signature="e#150#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -11,7 +11,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	"github.com/Polarishq/api-client-go/src/generated/models"
+	"github.com/Polarishq/logface-sdk-go/models"
 )
 
 // EventsReader is a Reader for the Events structure.

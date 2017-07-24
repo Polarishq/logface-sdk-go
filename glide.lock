@@ -1,5 +1,5 @@
-hash: a6764be4b3b34fd889119281274ba5dca11c1dfa9e900b6e070735282239db26
-updated: 2017-07-19T16:42:43.552989915-07:00
+hash: 7dfc2df7d51f0fc0252bc38ae7bd435a45e6ec6899902198a9aa39d8e07cb7a9
+updated: 2017-07-20T23:51:16.203552403-07:00
 imports:
 - name: github.com/asaskevich/govalidator
   version: aa5cce4a76edb1a5acecab1870c17abbffb5419e
@@ -38,7 +38,7 @@ imports:
 - name: github.com/PuerkitoBio/urlesc
   version: bbf7a2afc14f93e1e0a5c06df524fbd75e5031e5
 - name: golang.org/x/net
-  version: 02ac38e2528ff4adea90f184d71a3faa04b4b1b0
+  version: ab5485076ff3407ad2d02db054635913f017b0ed
   subpackages:
   - context
   - context/ctxhttp

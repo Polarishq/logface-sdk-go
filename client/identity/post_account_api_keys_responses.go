@@ -12,7 +12,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	"github.com/Polarishq/api-client-go/src/generated/models"
+	"github.com/Polarishq/logface-sdk-go/models"
 )
 
 // PostAccountAPIKeysReader is a Reader for the PostAccountAPIKeys structure.

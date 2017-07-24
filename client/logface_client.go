@@ -9,11 +9,11 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	"github.com/Polarishq/api-client-go/src/generated/client/applications"
-	"github.com/Polarishq/api-client-go/src/generated/client/context"
-	"github.com/Polarishq/api-client-go/src/generated/client/events"
-	"github.com/Polarishq/api-client-go/src/generated/client/identity"
-	"github.com/Polarishq/api-client-go/src/generated/client/search"
+	"github.com/Polarishq/logface-sdk-go/client/applications"
+	"github.com/Polarishq/logface-sdk-go/client/context"
+	"github.com/Polarishq/logface-sdk-go/client/events"
+	"github.com/Polarishq/logface-sdk-go/client/identity"
+	"github.com/Polarishq/logface-sdk-go/client/search"
 )
 
 // Default logface HTTP client.

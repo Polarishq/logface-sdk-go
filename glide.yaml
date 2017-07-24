@@ -1,4 +1,4 @@
-package: github.com/Polarishq/api-client-go
+package: github.com/Polarishq/logface-sdk-go
 import:
 - package: github.com/go-openapi/errors
 - package: github.com/go-openapi/runtime

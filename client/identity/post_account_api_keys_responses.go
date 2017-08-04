@@ -8,7 +8,6 @@ import (
 	"io"
 
 	"github.com/go-openapi/runtime"
-	"github.com/go-openapi/swag"
 
 	strfmt "github.com/go-openapi/strfmt"
 
@@ -117,22 +116,4 @@ type PostAccountAPIKeysBody struct {
 
 	// plain name of api key
 	Label string `json:"label,omitempty"`
-}
-
-// MarshalBinary interface implementation
-func (o *PostAccountAPIKeysBody) MarshalBinary() ([]byte, error) {
-	if o == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(o)
-}
-
-// UnmarshalBinary interface implementation
-func (o *PostAccountAPIKeysBody) UnmarshalBinary(b []byte) error {
-	var res PostAccountAPIKeysBody
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*o = res
-	return nil
 }

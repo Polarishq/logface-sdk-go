@@ -44,21 +44,3 @@ func (m *FilterKV) validateValues(formats strfmt.Registry) error {
 
 	return nil
 }
-
-// MarshalBinary interface implementation
-func (m *FilterKV) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
-}
-
-// UnmarshalBinary interface implementation
-func (m *FilterKV) UnmarshalBinary(b []byte) error {
-	var res FilterKV
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
-	return nil
-}

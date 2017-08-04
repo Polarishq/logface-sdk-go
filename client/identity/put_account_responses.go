@@ -8,7 +8,6 @@ import (
 	"io"
 
 	"github.com/go-openapi/runtime"
-	"github.com/go-openapi/swag"
 
 	strfmt "github.com/go-openapi/strfmt"
 
@@ -117,22 +116,4 @@ type PutAccountBody struct {
 
 	// whether the user has agreed to the TOS
 	TosAgreed bool `json:"tos_agreed,omitempty"`
-}
-
-// MarshalBinary interface implementation
-func (o *PutAccountBody) MarshalBinary() ([]byte, error) {
-	if o == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(o)
-}
-
-// UnmarshalBinary interface implementation
-func (o *PutAccountBody) UnmarshalBinary(b []byte) error {
-	var res PutAccountBody
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*o = res
-	return nil
 }

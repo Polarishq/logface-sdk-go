@@ -7,7 +7,6 @@ import (
 	strfmt "github.com/go-openapi/strfmt"
 
 	"github.com/go-openapi/errors"
-	"github.com/go-openapi/swag"
 	"github.com/go-openapi/validate"
 )
 
@@ -95,23 +94,5 @@ func (m *SocialProvider) validateImgURL(formats strfmt.Registry) error {
 		return err
 	}
 
-	return nil
-}
-
-// MarshalBinary interface implementation
-func (m *SocialProvider) MarshalBinary() ([]byte, error) {
-	if m == nil {
-		return nil, nil
-	}
-	return swag.WriteJSON(m)
-}
-
-// UnmarshalBinary interface implementation
-func (m *SocialProvider) UnmarshalBinary(b []byte) error {
-	var res SocialProvider
-	if err := swag.ReadJSON(b, &res); err != nil {
-		return err
-	}
-	*m = res
 	return nil
 }

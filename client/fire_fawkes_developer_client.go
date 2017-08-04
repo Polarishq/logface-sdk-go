@@ -4,9 +4,6 @@ package client
 // Editing this file might prove futile when you re-run the swagger generate command
 
 import (
-	"os"
-	"strings"
-
 	"github.com/go-openapi/runtime"
 	httptransport "github.com/go-openapi/runtime/client"
 
@@ -19,7 +16,7 @@ import (
 	"github.com/Polarishq/logface-sdk-go/client/search"
 )
 
-// Default logface HTTP client.
+// Default fire fawkes developer HTTP client.
 var Default = NewHTTPClient(nil)
 
 const (
@@ -34,14 +31,14 @@ const (
 // DefaultSchemes are the default schemes found in Meta (info) section of spec file
 var DefaultSchemes = []string{"https"}
 
-// NewHTTPClient creates a new logface HTTP client.
-func NewHTTPClient(formats strfmt.Registry) *Logface {
+// NewHTTPClient creates a new fire fawkes developer HTTP client.
+func NewHTTPClient(formats strfmt.Registry) *FireFawkesDeveloper {
 	return NewHTTPClientWithConfig(formats, nil)
 }
 
-// NewHTTPClientWithConfig creates a new logface HTTP client,
+// NewHTTPClientWithConfig creates a new fire fawkes developer HTTP client,
 // using a customizable transport config.
-func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *Logface {
+func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *FireFawkesDeveloper {
 	// ensure nullable parameters have default
 	if formats == nil {
 		formats = strfmt.Default
@@ -55,9 +52,9 @@ func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *Log
 	return New(transport, formats)
 }
 
-// New creates a new logface client
-func New(transport runtime.ClientTransport, formats strfmt.Registry) *Logface {
-	cli := new(Logface)
+// New creates a new fire fawkes developer client
+func New(transport runtime.ClientTransport, formats strfmt.Registry) *FireFawkesDeveloper {
+	cli := new(FireFawkesDeveloper)
 	cli.Transport = transport
 
 	cli.Applications = applications.New(transport, formats)
@@ -76,27 +73,10 @@ func New(transport runtime.ClientTransport, formats strfmt.Registry) *Logface {
 // DefaultTransportConfig creates a TransportConfig with the
 // default settings taken from the meta section of the spec file.
 func DefaultTransportConfig() *TransportConfig {
-	var scheme []string
-	var host string
-
-	envScheme := os.Getenv(strings.Replace(strings.ToUpper(DefaultSchemes[0]), "-", "_", -1) + "_SCHEME")
-	if len(envScheme) == 0 {
-		scheme = DefaultSchemes
-	} else {
-		scheme = []string{envScheme}
-	}
-
-	envHost := os.Getenv(strings.Replace(strings.ToUpper(DefaultHost), "-", "_", -1) + "_HOST")
-	if len(envHost) == 0 {
-		host = DefaultHost
-	} else {
-		host = envHost
-	}
-
 	return &TransportConfig{
-		Host:     host,
+		Host:     DefaultHost,
 		BasePath: DefaultBasePath,
-		Schemes:  scheme,
+		Schemes:  DefaultSchemes,
 	}
 }
 
@@ -129,8 +109,8 @@ func (cfg *TransportConfig) WithSchemes(schemes []string) *TransportConfig {
 	return cfg
 }
 
-// Logface is a client for logface
-type Logface struct {
+// FireFawkesDeveloper is a client for fire fawkes developer
+type FireFawkesDeveloper struct {
 	Applications *applications.Client
 
 	Context *context.Client
@@ -145,7 +125,7 @@ type Logface struct {
 }
 
 // SetTransport changes the transport on the client and all its subresources
-func (c *Logface) SetTransport(transport runtime.ClientTransport) {
+func (c *FireFawkesDeveloper) SetTransport(transport runtime.ClientTransport) {
 	c.Transport = transport
 
 	c.Applications.SetTransport(transport)
